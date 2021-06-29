@@ -144,7 +144,7 @@ class: center, middle
 
 - Works on top of HTTP 2
 
-- Usually, uses protobuf for messaging, JSON is optional
+- Usually, uses [protobuf](https://developers.google.com/protocol-buffers) for messaging, JSON is optional
 
   - Uses *proto3* syntax
 
@@ -176,17 +176,32 @@ brew install protobuf
 ### Install go gRPC plugin
 
 ```bash
-go get github.com/golang/protobuf/protoc-gen-go
+go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 ```
+
+.content-credits[https://developers.google.com/protocol-buffers/docs/reference/go-generated]
 
 ---
 
 ### Steps
 
 - Define a new `.proto` file
+  - Define the req & response `message`s
+  - Define the `service`
 - Generate stubs using:
   `protoc --go_out=plugins=grpc:. --go_opt=paths=source_relative api/<filename>.proto`
 - Implement the server
+- Connect to the server using the client
+
+---
+
+```golang
+import "google.golang.org/grpc"
+
+func main() {
+    grpc.Dial(...)
+}
+```
 
 ---
 class: center, middle
