@@ -160,6 +160,8 @@ class: center, middle
 
 - Auto-generates client and server side stubs
 
+.content-credits[https://developers.google.com/protocol-buffers/docs/proto3]
+
 ---
 
 - Supports both a unary (request-response) rpc as well as streaming (two-way communication)
