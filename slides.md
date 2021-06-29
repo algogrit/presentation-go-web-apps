@@ -128,6 +128,11 @@ class: center, middle
 ---
 class: center, middle
 
+`go:generate`
+
+---
+class: center, middle
+
 #### HTTP Testing
 
 ---
@@ -214,6 +219,59 @@ func main() {
 class: center, middle
 
 ### Interceptors
+
+---
+class: center, middle
+
+## Alternatives to ReST or gRPC?
+
+---
+class: center, middle
+
+### [GraphQL](https://github.com/graphql-go/graphql)
+
+.content-credits[https://pkg.go.dev/github.com/graphql-go/graphql]
+
+---
+class: center, middle
+
+## Working with DB
+
+---
+class: center, middle
+
+`database/sql`
+
+---
+class: center, middle
+
+### Third-party packages
+
+---
+class: center, middle
+
+[`sqlx`](https://github.com/jmoiron/sqlx)
+
+.content-credits[http://jmoiron.github.io/sqlx/]
+
+---
+class: center, middle
+
+[`gorm`](https://github.com/go-gorm/gorm)
+
+.content-credits[https://gorm.io/index.html]
+
+---
+class: center, middle
+
+### What about NoSQL?
+
+---
+class: center, middle
+
+[`mongo-go-driver`](https://github.com/mongodb/mongo-go-driver)
+
+.content-credits[https://www.mongodb.com/languages/golang]
 
 ---
 class: center, middle
