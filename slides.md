@@ -11,33 +11,40 @@ class: center, middle
 Gaurav Agarwal
 
 ---
+class: center, middle
 
-# Agenda
+## `net/http` package
 
 ---
 
-class: center, middle
+- Supports both `http` & `https`
 
-![Me](assets/images/me.png)
+- Also has support for certificate management
 
-Software Engineer & Product Developer
+- Simple and powerful
 
-Director of Engineering & Founder @ https://codermana.com
+---
 
-ex-Tarka Labs, ex-BrowserStack, ex-ThoughtWorks
+- `http.ListenAndServe(<address>, <router>)`
+
+- `r.Handle(<route>, <router>)`
+
+- `r.HandleFunc(<route>, <handlerFunc>)`
 
 ---
 class: center, middle
 
-```golang
-package main
+### Introducing `gorilla/mux`
 
-import "fmt"
+---
+class: center, middle
 
-func main() {
-  fmt.Println("Hello, world!")
-}
-```
+### Clean Code Architecture
+
+---
+class: center, middle
+
+Sample App: [YAES Server](https://github.com/algogrit/yaes-server)
 
 ---
 
