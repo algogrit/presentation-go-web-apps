@@ -101,7 +101,41 @@ class: center, middle
 Sample App: [YAES Server](https://github.com/algogrit/yaes-server)
 
 ---
+class: center, middle
 
+### Advance Testing
+
+---
+class: center, middle
+
+#### Mocking
+
+---
+class: center, middle
+
+*Go is a statically typed language.*
+
+---
+class: center, middle
+
+[gomock](https://github.com/golang/mock) is a mocking framework for the Go programming language.
+
+---
+class: center, middle
+
+#### HTTP Testing
+
+---
+class: center, middle
+
+[`net/http/httptest`](https://golang.org/pkg/net/http/httptest/)
+
+---
+class: center, middle
+
+#### Concurrency Testing
+
+---
 class: center, middle
 
 Code
