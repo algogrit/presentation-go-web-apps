@@ -143,7 +143,12 @@ class: center, middle
 ---
 class: center, middle
 
-#### Concurrency Testing
+#### Consistency Testing
+
+---
+class: center, middle
+
+Failing the build due to *race* conditions...
 
 ---
 class: center, middle
