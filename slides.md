@@ -34,7 +34,23 @@ class: center, middle
 ---
 class: center, middle
 
-### Introducing `gorilla/mux`
+### Introducing [`gorilla` toolkit](https://www.gorillatoolkit.org/)
+
+---
+class: center, middle
+
+#### `mux` [package](https://github.com/gorilla/mux)
+
+---
+
+#### [Other packages](https://www.gorillatoolkit.org/) of interest
+
+- `gorilla/handlers`
+- `gorilla/csrf`
+- `gorilla/sessions`
+
+- `gorilla/websocket`
+- `gorilla/rpc`
 
 ---
 class: center, middle
