@@ -39,7 +39,45 @@ class: center, middle
 ---
 class: center, middle
 
+### [Project Layout](https://github.com/golang-standards/project-layout)
+
+---
+class: center, middle
+
 ### Clean Code Architecture
+
+---
+class: center, middle
+
+![Clean Architecture](assets/images/CleanArchitecture.jpg)
+
+---
+
+#### Layers
+
+- Entities (entities)
+
+  Defines all the Models in the application
+
+- Repository
+
+  Encapsulates the interaction with the database. This is the lowest layer in the application.
+
+- Services
+
+  Orchestrates the interaction with repository and other services.
+
+---
+
+#### Layers (continued)
+
+- Transport
+
+  Encapsulates the interaction with application over an http API
+
+- Binaries
+
+  The code in `cmd/server` ties all the layers together, in order the start the app.
 
 ---
 class: center, middle
