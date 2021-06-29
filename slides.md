@@ -206,6 +206,11 @@ func main() {
 ---
 class: center, middle
 
+### Interceptors
+
+---
+class: center, middle
+
 Code
 https://github.com/algogrit/presentation-go-web-apps
 
