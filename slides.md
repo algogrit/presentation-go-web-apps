@@ -203,6 +203,8 @@ func main() {
 }
 ```
 
+.content-credits[https://pkg.go.dev/google.golang.org/grpc]
+
 ---
 class: center, middle
 
