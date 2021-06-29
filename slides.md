@@ -138,6 +138,59 @@ class: center, middle
 ---
 class: center, middle
 
+## gRPC
+
+---
+
+- Works on top of HTTP 2
+
+- Usually, uses protobuf for messaging, JSON is optional
+
+  - Uses *proto3* syntax
+
+- Auto-generates client and server side stubs
+
+---
+
+- Supports both a unary (request-response) rpc as well as streaming (two-way communication)
+
+- Middleware are known as interceptors
+
+- Isn't well supported in the browser
+
+---
+class: center, middle
+
+### Install protobuf for your platform
+
+---
+
+#### For Mac
+
+```bash
+brew install protobuf
+```
+
+---
+
+### Install go gRPC plugin
+
+```bash
+go get github.com/golang/protobuf/protoc-gen-go
+```
+
+---
+
+### Steps
+
+- Define a new `.proto` file
+- Generate stubs using:
+  `protoc --go_out=plugins=grpc:. --go_opt=paths=source_relative api/<filename>.proto`
+- Implement the server
+
+---
+class: center, middle
+
 Code
 https://github.com/algogrit/presentation-go-web-apps
 
