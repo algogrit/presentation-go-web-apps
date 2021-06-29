@@ -6,7 +6,7 @@ layout: true
 
 class: center, middle
 
-# {title}
+# Go Web Apps
 
 Gaurav Agarwal
 
@@ -44,7 +44,7 @@ func main() {
 class: center, middle
 
 Code
-https://github.com/algogrit/presentation-template
+https://github.com/algogrit/presentation-go-web-apps
 
 Slides
-https://template.slides.algogrit.com
+https://go-web-apps.slides.algogrit.com
