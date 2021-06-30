@@ -193,10 +193,27 @@ brew install protobuf
 ### Install go gRPC plugin
 
 ```bash
-go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+go install google.golang.org/protobuf/cmd/protoc-gen-go@latest # For generating message stubs
+go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest # For generating client & server stubs
 ```
 
-.content-credits[https://developers.google.com/protocol-buffers/docs/reference/go-generated]
+.content-credits[https://grpc.io/docs/languages/go/quickstart/#prerequisites]
+
+---
+class: center, middle
+
+### Writing your first `.proto` file
+
+---
+
+### Generating stubs
+
+```bash
+protoc \
+  --go_out=. --go_opt=paths=source_relative \ # For generating message stubs
+  --go-grpc_out=. --go-grpc_opt=paths=source_relative  \ # For generating client & server stubs
+  api/<filename>.proto
+```
 
 ---
 
@@ -205,10 +222,10 @@ go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 - Define a new `.proto` file
   - Define the req & response `message`s
   - Define the `service`
-- Generate stubs using:
-  `protoc --go_out=plugins=grpc:. --go_opt=paths=source_relative api/<filename>.proto`
+- Generate stubs
 - Implement the server
-- Connect to the server using the client
+- Wire up the server for connections
+- Dial the client to the server
 
 ---
 
@@ -216,7 +233,9 @@ go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 import "google.golang.org/grpc"
 
 func main() {
-    grpc.Dial(...)
+    grpc.NewServer(...) // Server side
+
+    grpc.Dial(...) // Client side
 }
 ```
 
