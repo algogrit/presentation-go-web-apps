@@ -281,6 +281,13 @@ class: center, middle
 `database/sql`
 
 ---
+
+### Interfaces
+
+- `sql.Scanner`
+- `driver.Valuer`
+
+---
 class: center, middle
 
 ### Third-party packages
