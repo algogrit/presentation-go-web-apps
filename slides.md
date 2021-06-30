@@ -263,6 +263,13 @@ class: center, middle
 
 .content-credits[https://pkg.go.dev/github.com/graphql-go/graphql]
 
+<!-- ---
+class: center, middle
+
+### [RSocket](https://rsocket.io/)
+
+.content-credits[https://www.youtube.com/watch?v=jf0xhnoezC4] -->
+
 ---
 class: center, middle
 
