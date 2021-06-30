@@ -249,6 +249,11 @@ class: center, middle
 ---
 class: center, middle
 
+[go-grpc-middleware](https://github.com/grpc-ecosystem/go-grpc-middleware)
+
+---
+class: center, middle
+
 ## Alternatives to ReST or gRPC?
 
 ---
