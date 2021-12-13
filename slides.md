@@ -153,6 +153,13 @@ Failing the build due to *race* conditions...
 ---
 class: center, middle
 
+#### Fuzz testing
+
+.content-credits[https://github.com/google/gofuzz]
+
+---
+class: center, middle
+
 ## gRPC
 
 ---
