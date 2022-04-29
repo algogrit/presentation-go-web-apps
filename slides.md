@@ -155,7 +155,7 @@ class: center, middle
 
 #### Fuzz testing
 
-.content-credits[https://github.com/google/gofuzz]
+.content-credits[https://go.dev/doc/fuzz]
 
 ---
 class: center, middle
